@@ -1,81 +1,85 @@
-# 💱 Currency Converter – Python GUI App
+# 🔔 Desktop Reminder App – Python Project
 
-This is a **simple and modern Python GUI app** that converts one currency into another using real-time exchange rates from an API. It’s built using `tkinter` and makes currency conversion fast and easy for everyone.
+This is a **Python-based desktop reminder app** that sends system notifications at regular time intervals. It's built using the `plyer` library and runs in the terminal, making it lightweight and easy to use for daily reminders.
 
 ---
 
 ## ✅ Features
 
-- 🌍 Convert any currency to another (e.g. USD → PKR, EUR → INR)
-- 🔄 Real-time exchange rates using `exchangerate-api`
-- 🖱️ Easy-to-use graphical interface
-- ❌ Error handling for wrong input or invalid currency codes
+- ⏱️ Set reminder intervals (in minutes)
+- 💬 Enter your custom reminder message
+- 🔄 Shows live countdown until the next notification
+- 🔔 Sends desktop notifications using system tray
+- Works cross-platform (Windows, macOS, Linux)
 
 ---
 
-## 🧠 What You’ll Learn
+## 🧠 What You'll Learn
 
-- Using **API calls** in Python with the `requests` module
-- Creating user-friendly **GUIs with tkinter**
-- Input validation and error handling
-- Formatting and displaying results
+- Working with the **`plyer`** notification library
+- Countdown logic with `time.sleep()` and loops
+- Terminal display refresh (`os.system('cls')` or `clear`)
+- Input validation and infinite reminder loops
 
 ---
 
-## 💻 How to Run the App
+## 💻 How to Run
 
-1. Install Python 3.x if not already installed
-2. Make sure `requests` library is installed:
+1. Make sure Python 3 is installed
+2. Install the `plyer` library:
 ```bash
-pip install requests
+pip install plyer
 ```
-3. Save the script as `currency_converter.py`
+
+3. Save the file as `desktop_reminder.py`
 4. Run the script:
 ```bash
-python currency_converter.py
+python desktop_reminder.py
 ```
+
+5. Enter the reminder interval and message when prompted
 
 ---
 
-## 🧪 Example
+## 🧪 Example Output
 
 ```text
-From Currency: USD
-To Currency: PKR
-Amount: 10
+⏱️ Enter reminder interval (in minutes): 1
+💬 Enter reminder message: Drink Water
 
-Result:
-10.00 USD = 2783.45 PKR
+⏳ Time left for next reminder: 00:59
+⏳ Time left for next reminder: 00:58
+...
+🔔 Notification: Drink Water
 ```
+
+The notification will appear every 1 minute with the message "Drink Water."
 
 ---
 
 ## 📦 Technologies Used
 
 - Python 3.x
-- `tkinter` for GUI
-- `requests` for API calls
-- [ExchangeRate-API](https://www.exchangerate-api.com/) (free tier)
+- `plyer` – for desktop notifications
+- `time` – for countdown timer
+- `os` – for cross-platform terminal clearing
 
 ---
 
-## ⚠️ Notes
+## 📌 Why I Built This
 
-- App only works with valid 3-letter currency codes (e.g. USD, EUR, PKR, INR)
-- Requires internet connection to fetch exchange rates
-- No sign-up needed for API (free tier)
+This project was made to help users stay productive and healthy by sending them reminders right on their desktop. It’s also a fun way to explore real-world Python automation.
 
 ---
 
 ## 📄 License
 
-This project is open-source under the **MIT License**.  
-You are free to use, modify, or share it with proper credit.
+MIT License – Free to use, improve, and share with credit.
 
 ---
 
 ## 🙋‍♂️ About Me
 
-I'm **Ali Zain**, a Python and AI enthusiast focused on building helpful tools using real-world APIs and GUI design. This currency converter is part of my journey toward mastering practical Python development.
+I'm **Ali Zain**, a creative Python developer building tools that solve small problems with smart code. This desktop reminder app is part of my daily productivity experiments.
 
-> “From code to currency – converted with clarity.”
+> “Simple reminders lead to strong habits.”
